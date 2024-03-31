@@ -5,7 +5,7 @@
 typedef struct {
     int *collection;
     int capacity;
-    int top; // Change 'size' to 'top' to represent the index of the top element
+    int top; 
 } Stack;
 
 Stack *create_stack(int capacity) {
@@ -23,7 +23,7 @@ Stack *create_stack(int capacity) {
     }
 
     stack->capacity = capacity;
-    stack->top = -1; // Initialize top to -1 to represent an empty stack
+    stack->top = -1; 
     return stack;
 }
 
@@ -47,7 +47,7 @@ bool push(Stack *stack, int item) {
     if (stack == NULL || is_full(stack))
         return false;
 
-    stack->collection[++stack->top] = item; // Increment top before assigning the value
+    stack->collection[++stack->top] = item; 
     return true;
 }
 
@@ -55,7 +55,7 @@ bool peek(Stack *stack, int *item) {
     if (stack == NULL || is_empty(stack))
         return false;
 
-    *item = stack->collection[stack->top]; // Access the top element
+    *item = stack->collection[stack->top]; 
     return true;
 }
 
@@ -63,7 +63,7 @@ bool pop(Stack *stack, int *item) {
     if (stack == NULL || is_empty(stack))
         return false;
 
-    *item = stack->collection[stack->top--]; // Decrement top after retrieving the value
+    *item = stack->collection[stack->top--]; 
     return true;
 }
 
