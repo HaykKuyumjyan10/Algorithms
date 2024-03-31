@@ -33,5 +33,5 @@ int linearSearch(int arr[], int n, int x) {
             return i; 
         }
     }
-    return -1; // If element is not found
+    return -1;
 }
