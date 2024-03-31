@@ -44,5 +44,5 @@ int interpolationSearch(int arr[], int n, int x) {
             l = j + 1;
         }
     }
-    return -1; // If element is not found
+    return -1; 
 }
