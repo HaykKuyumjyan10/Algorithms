@@ -41,5 +41,5 @@ int binarySearch(int arr[], int low, int high, int x) {
             high = mid - 1;
         }
     }
-    return -1; // Element not found
+    return -1; 
 }
