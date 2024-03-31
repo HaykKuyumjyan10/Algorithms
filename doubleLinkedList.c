@@ -116,8 +116,7 @@ int main() {
                 printf("Invalid choice. Please try again.\n");
         }
     } while (choice != 5);
-
-    // Freeing memory for the remaining nodes
+    
     struct Node* temp;
     while (head != NULL) {
         temp = head;
